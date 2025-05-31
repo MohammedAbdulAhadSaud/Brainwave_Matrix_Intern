@@ -11,7 +11,6 @@ def password_strength_checker(password):
     # Count the number of criteria met
     criteria_met = sum([length_criteria, uppercase_criteria, lowercase_criteria,
                         number_criteria, special_char_criteria])
-
     # Determine password strength
     if criteria_met < 3:
         strength = "Weak"
